@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">team App</string>
+    <string name="search">search</string>
+    <string name="home">home</string>
+    <string name="goals">goals</string>
+    <string name="new_goal">new goal</string>
+    <string name="goal_name">goal name</string>
+    <string name="goals_page">GOALS PAGE</string>
+</resources>
