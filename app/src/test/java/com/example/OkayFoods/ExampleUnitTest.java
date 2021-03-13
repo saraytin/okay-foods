@@ -1,4 +1,4 @@
-package com.example.teamapp;
+package com.example.OkayFoods;
 
 import org.junit.Test;
 

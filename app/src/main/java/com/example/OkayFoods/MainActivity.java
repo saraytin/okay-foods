@@ -1,11 +1,10 @@
-package com.example.teamapp;
+package com.example.OkayFoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public void searchPage(View view) {
 
 
-        Intent intent = new Intent(this, SerachPage.class);
+        Intent intent = new Intent(this, SearchPage.class);
         startActivity(intent);
     }
 

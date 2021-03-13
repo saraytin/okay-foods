@@ -1,4 +1,4 @@
-package com.example.teamapp;
+package com.example.OkayFoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,7 @@ public class SearchResults extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(),"the calories have been added!",Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this, SerachPage.class);
+        Intent intent = new Intent(this, SearchPage.class);
         startActivity(intent);
     }
 }

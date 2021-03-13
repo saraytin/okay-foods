@@ -1,4 +1,4 @@
-package com.example.teamapp;
+package com.example.OkayFoods;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,7 +35,7 @@ public class GoalsPage extends AppCompatActivity {
     public void searchPage(View view) {
 
 
-        Intent intent = new Intent(this, SerachPage.class);
+        Intent intent = new Intent(this, SearchPage.class);
         startActivity(intent);
     }
     public void goalsPage(View view) {
