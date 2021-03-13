@@ -17,6 +17,9 @@ public class NewGoals extends AppCompatActivity {
     }
 
     public void saveChanges(View view) {
+        //add code here to get the info of new goal to add it to the java code
+
+        //add code here to add to call java class to add new goal
 
         Toast.makeText(getApplicationContext(),"Goal has been saved!",Toast.LENGTH_SHORT).show();
 
