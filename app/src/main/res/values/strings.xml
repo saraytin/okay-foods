@@ -6,4 +6,7 @@
     <string name="new_goal">new goal</string>
     <string name="goal_name">goal name</string>
     <string name="goals_page">GOALS PAGE</string>
+    <string name="search_page">SEARCH PAGE</string>
+    <string name="food_name">Food name</string>
+    <string name="search">search</string>
 </resources>
