@@ -41,11 +41,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:text="start date"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView8"
@@ -53,11 +53,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="65dp"
         android:text="end date"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
         android:id="@+id/currentDate"
@@ -65,11 +65,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/endDate"
@@ -77,10 +77,34 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Goal Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/golaName"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:hint="Goal Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        tools:layout_editor_absoluteY="91dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
