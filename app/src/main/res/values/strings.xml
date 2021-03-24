@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">team App</string>
+    <string name="app_name">Okay Foods</string>
     <string name="search">search</string>
     <string name="home">home</string>
     <string name="goals">goals</string>
@@ -8,5 +8,8 @@
     <string name="goals_page">GOALS PAGE</string>
     <string name="search_page">SEARCH PAGE</string>
     <string name="food_name">Food name</string>
-    <string name="search">search</string>
+    <string name="name_label">Name: </string>
+    <string name="age_label">Age: </string>
+    <string name="weight_label">Weight: </string>
+    <string name="placeholder">placeholder</string>
 </resources>
