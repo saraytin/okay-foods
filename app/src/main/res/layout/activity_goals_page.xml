@@ -74,6 +74,8 @@
         android:id="@+id/GoalList"
         android:layout_width="376dp"
         android:layout_height="453dp"
+        android:divider="@android:color/holo_red_light"
+        android:dividerHeight="1dp"
         app:layout_constraintBottom_toTopOf="@+id/homePage2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
