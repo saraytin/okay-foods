@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamApp">
-        <activity android:name=".EditGoals"></activity>
+        <activity android:name=".api"></activity>
         <activity android:name=".SearchResults" />
         <activity android:name=".Profile" />
         <activity android:name=".NewGoals" />

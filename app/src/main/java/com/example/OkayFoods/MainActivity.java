@@ -68,13 +68,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"You are on the home page!",Toast.LENGTH_SHORT).show();
     }
 
-    public void editGoalsPage(View view) {
-
-
-        Intent intent = new Intent(this, EditGoals.class);
-
-        
+    public void calCalories(View view) {
+        Intent intent = new Intent(this, api.class);
         startActivity(intent);
     }
-
 }
