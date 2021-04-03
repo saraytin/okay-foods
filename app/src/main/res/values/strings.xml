@@ -12,4 +12,13 @@
     <string name="age_label">Age: </string>
     <string name="weight_label">Weight: </string>
     <string name="placeholder">placeholder</string>
+    <string name="calories">Calories</string>
+    <string name="calories_for_today">CALORIES FOR TODAY</string>
+    <string name="profile">Profile</string>
+    <string name="home_page">HOME PAGE</string>
+    <string name="calculate_calories">calculate calories</string>
+    <string name="enter_food">Enter Food</string>
+    <string name="enter_food_name_to_calculate">Enter Food Name To Calculate</string>
+    <string name="calories_calculator">Calories Calculator</string>
+    <string name="Meal">TODO</string>
 </resources>
