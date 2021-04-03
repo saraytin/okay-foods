@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 
 public class GoalsListViewAdapter extends BaseAdapter implements ListAdapter {
@@ -57,6 +59,29 @@ public class GoalsListViewAdapter extends BaseAdapter implements ListAdapter {
         //Handle TextView for goal end date
         TextView goalEnd = (TextView)view.findViewById(R.id.gEndDate);
         goalEnd.setText(String.valueOf(list.get(position).getEndDate()));
+
+        FloatingActionButton delete = (FloatingActionButton)view.findViewById(R.id.gDelete);
+        //Define the onclick listener which will delete the item from the list and then refresh the
+        // display
+        delete.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                list.remove(position);
+                notifyDataSetChanged();
+            }
+        });
+
+
+        FloatingActionButton edit = (FloatingActionButton)view.findViewById(R.id.gEdit);
+        //Define the onclick listener which will delete the item from the list and then refresh the
+        // display
+        edit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)context).editGoalsPage(v);
+            }
+        });
+
 
 
         return view;

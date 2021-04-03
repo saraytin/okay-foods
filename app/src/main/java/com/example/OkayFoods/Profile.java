@@ -17,12 +17,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        TextView tv1 = (TextView)findViewById(R.id.name);
-        tv1.setText(extra.getName());
-        TextView tv2 = (TextView)findViewById(R.id.age);
-        tv1.setText(extra.getAge());
-        TextView tv3 = (TextView)findViewById(R.id.weight);
-        tv1.setText(extra.getWeight());
+
 
     }
 
@@ -38,14 +33,9 @@ public class Profile extends AppCompatActivity {
         EditText name = (EditText)findViewById(R.id.userName);
         EditText age = (EditText)findViewById(R.id.userAge);
         EditText weight = (EditText)findViewById(R.id.userWeight);
-        String uName = name.getText().toString();
-        int uAge = Integer.parseInt(age.getText().toString());
-        int uWeight = Integer.parseInt(weight.getText().toString());
-        extra.setName(uName);
-        extra.setAge(uAge);
-        extra.setWeight(uWeight);
 
 
+        startActivity(intent);
     }
 
 }
