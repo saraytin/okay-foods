@@ -163,6 +163,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:onClick="searchPage"
+        app:backgroundTint="#FD0404"
         android:text="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -186,7 +187,6 @@
         android:layout_height="50dp"
         android:onClick="homePage"
         android:text="@string/home"
-        app:backgroundTint="#FD0404"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
