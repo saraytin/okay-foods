@@ -15,13 +15,13 @@ import com.google.gson.Gson;
 import java.util.Date;
 
 public class NewProfiles extends AppCompatActivity {
-    private ProfileObject newProfile;
+    private ProfilesList profilesList;
     public static final String MY_PREFS_NAME = "MyPrefsFile";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_profiles);
-        this.newProfile = (ProfileObject) getIntent().getSerializableExtra("profileObj");
+        this.profilesList = (ProfilesList) getIntent().getSerializableExtra("profileslist");
     }
 
     public void saveChanges(View view) {
@@ -31,20 +31,20 @@ public class NewProfiles extends AppCompatActivity {
         EditText weight = (EditText)findViewById(R.id.userWeight);
         EditText calories = (EditText)findViewById(R.id.userCalories);
         //add code here to add to call java class to add new profile
-        newProfile = new ProfileObject(profile.getText().toString(),Integer.valueOf(age.getText().toString()),Integer.valueOf(weight.getText().toString()),Integer.valueOf(calories.getText().toString()));
-        //this.profilesList.getProfiles().add(newProfile);
+        ProfileObject newProfile = new ProfileObject(profile.getText().toString(),Integer.valueOf(age.getText().toString()),Integer.valueOf(weight.getText().toString()),Integer.valueOf(calories.getText().toString()));
+        /*this.profilesList.getProfiles().add(newProfile);*/
         Toast.makeText(getApplicationContext(),"Profile has been saved!",Toast.LENGTH_SHORT).show();
-        SharedPreferences  mPrefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+        /*SharedPreferences  mPrefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
         SharedPreferences.Editor prefsEditor = mPrefs.edit();
         Gson gson = new Gson();
-        String json = gson.toJson(this.newProfile);
-        prefsEditor.putString("ProfileObj", json);
-        prefsEditor.commit();
+        String json = gson.toJson(this.profilesList);
+        prefsEditor.putString("ProfilesList", json);
+        prefsEditor.commit();*/
 
-        Intent intent = new Intent();
-        intent.putExtra("profileObj",this.newProfile);
+        /*Intent intent = new Intent();
+        intent.putExtra("profileslist",this.profilesList);
         setResult(RESULT_OK,intent);
-        finish();
+        finish();*/
 
     }
 

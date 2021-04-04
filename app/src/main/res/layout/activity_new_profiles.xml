@@ -11,7 +11,7 @@
     android:layout_marginEnd="16dp"
     android:layout_marginRight="16dp"
     android:layout_marginBottom="16dp"
-    tools:context=".Profile">
+    tools:context=".NewProfiles">
     <TextView
         android:id="@+id/Age_Label"
         android:layout_width="99dp"
@@ -74,7 +74,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="20dp"
-        android:onClick="saveChanges"
+        android:onClick="homePage"
         android:text="save changes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

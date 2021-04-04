@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private GoalsList goalsList;
-    private ProfileObject profileObj;
+    private ProfilesList profilesList;
     private ListView listView;
     public static final String MY_PREFS_NAME = "MyPrefsFile";
     private TextView tvCal;
@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         }
         String json2 = mPrefs.getString("ProfileObj", "");
         if(json2 == ""){
-            this.profileObj = new ProfileObject("Name",25,150,2000);
+            this.profilesList = new ProfilesList();
         }else {
-            this.profileObj = gson.fromJson(json, ProfileObject.class);
+            this.profilesList = gson.fromJson(json, ProfilesList.class);
         }
 
         this.listView = (ListView) findViewById(R.id.goalOverview);
