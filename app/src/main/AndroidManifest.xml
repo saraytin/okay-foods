@@ -14,6 +14,7 @@
         <activity android:name=".api"></activity>
         <activity android:name=".SearchResults" />
         <activity android:name=".Profile" />
+        <activity android:name=".NewProfiles" />
         <activity android:name=".NewGoals" />
         <activity android:name=".GoalsPage" />
         <activity android:name=".SearchPage" />

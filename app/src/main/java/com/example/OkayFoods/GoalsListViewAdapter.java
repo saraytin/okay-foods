@@ -78,7 +78,7 @@ public class GoalsListViewAdapter extends BaseAdapter implements ListAdapter {
         edit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                ((MainActivity)context).editGoalsPage(v);
+                /*((MainActivity)context).editGoalsPage(v);*/
             }
         });
 

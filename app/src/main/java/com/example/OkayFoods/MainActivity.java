@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -15,8 +16,10 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private GoalsList goalsList;
+    private ProfileObject profileObj;
     private ListView listView;
     public static final String MY_PREFS_NAME = "MyPrefsFile";
+    private TextView tvCal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +34,17 @@ public class MainActivity extends AppCompatActivity {
         }else {
             this.goalsList = gson.fromJson(json, GoalsList.class);
         }
+        String json2 = mPrefs.getString("ProfileObj", "");
+        if(json2 == ""){
+            this.profileObj = new ProfileObject("Name",25,150,2000);
+        }else {
+            this.profileObj = gson.fromJson(json, ProfileObject.class);
+        }
 
         this.listView = (ListView) findViewById(R.id.goalOverview);
         displayGoalList(this.goalsList.getGoals());
+        tvCal = (TextView) findViewById(R.id.calories);
+        tvCal.setText("2000");
     }
 
     public void displayGoalList(ArrayList<GoalObject> list){
@@ -68,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"You are on the home page!",Toast.LENGTH_SHORT).show();
     }
 
-    public void calCalories(View view) {
+    /*public void calCalories(View view) {
         Intent intent = new Intent(this, api.class);
         startActivity(intent);
-    }
+    }*/
 }

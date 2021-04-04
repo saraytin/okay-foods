@@ -4,13 +4,16 @@
     <string name="home">home</string>
     <string name="goals">goals</string>
     <string name="new_goal">new goal</string>
+    <string name="new_profile">new profile</string>
     <string name="goal_name">goal name</string>
     <string name="goals_page">GOALS PAGE</string>
+    <string name="profiles_page">PROFILES PAGE</string>
     <string name="search_page">SEARCH PAGE</string>
     <string name="food_name">Food name</string>
     <string name="name_label">Name: </string>
     <string name="age_label">Age: </string>
     <string name="weight_label">Weight: </string>
+    <string name="calories_label">Calories: </string>
     <string name="placeholder">placeholder</string>
     <string name="calories">Calories</string>
     <string name="calories_for_today">CALORIES FOR TODAY</string>
@@ -19,6 +22,6 @@
     <string name="calculate_calories">calculate calories</string>
     <string name="enter_food">Enter Food</string>
     <string name="enter_food_name_to_calculate">Enter Food Name To Calculate</string>
-    <string name="calories_calculator">Calories Calculator</string>
-    <string name="Meal">TODO</string>
+    <string name="calories_calculator">Food Search</string>
+    <string name="Meal">Image could not be loaded</string>
 </resources>
